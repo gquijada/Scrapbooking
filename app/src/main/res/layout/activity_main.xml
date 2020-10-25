@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|top"
+        android:text="@string/landmarks_in_europe"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#2631A6"
+        android:textColorHighlight="#0D47A1"
+        android:textColorLink="#039BE5"
+        android:textSize="30sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.028" />
+
+    <ImageView
+        android:id="@+id/neuschwanstein"
+        android:layout_width="190dp"
+        android:layout_height="126dp"
+        android:contentDescription="@string/castle"
+        android:foregroundGravity="clip_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.018"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15"
+        app:srcCompat="@drawable/neuschwanstein_castle" />
+
+    <ImageView
+        android:id="@+id/prauge"
+        android:layout_width="204dp"
+        android:layout_height="137dp"
+        android:contentDescription="@string/prague_castle"
+        android:foregroundGravity="center"
+        app:layout_constrainedHeight="true"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.521"
+        app:srcCompat="@drawable/prague_castle" />
+
+    <ImageView
+        android:id="@+id/buda"
+        android:layout_width="193dp"
+        android:layout_height="120dp"
+        android:contentDescription="@string/buda_castle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.018"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.879"
+        app:srcCompat="@drawable/buda_castle" />
+
+    <TextView
+        android:id="@+id/neeushwanstein_info"
+        android:layout_width="203dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="192dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="8dp"
+        android:contextClickable="false"
+        android:elegantTextHeight="true"
+        android:foregroundGravity="center|center_horizontal"
+        android:gravity="center|center_horizontal"
+        android:text="@string/neauschwanstein_info"
+        android:textAlignment="gravity"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textIsSelectable="false"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/prauge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/neuschwanstein"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.163" />
+
+    <TextView
+        android:id="@+id/prauge_info"
+        android:layout_width="187dp"
+        android:layout_height="126dp"
+        android:foregroundGravity="clip_horizontal|center"
+        android:gravity="center|center_horizontal"
+        android:text="@string/prague_info"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textIsSelectable="false"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/buda"
+        app:layout_constraintEnd_toStartOf="@+id/prauge"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/neuschwanstein"
+        app:layout_constraintVertical_bias="0.518" />
+
+    <TextView
+        android:id="@+id/buda_info"
+        android:layout_width="185dp"
+        android:layout_height="129dp"
+        android:foregroundGravity="center_vertical|center"
+        android:gravity="center|center_horizontal"
+        android:text="@string/buda_info"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buda"
+        app:layout_constraintTop_toBottomOf="@+id/prauge" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

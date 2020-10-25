@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Scrapbooking</string>
+    <string name="landmarks_in_europe">Landmarks in Europe!</string>
+    <string name="castle">nueschwanstien</string>
+    <string name="prague_castle">prague_castle</string>
+    <string name="buda_castle">buda_castle</string>
+    <string name="neauschwanstein_info">Neuschwanstein Castle is a 19th-century Romanesque Revival palace on a rugged hill above the village of Hohenschwangau near Füssen in southwest Bavaria, Germany.</string>
+    <string name="prague_info">Charles Bridge is a historic bridge that crosses the Vltava river in Prague, Czech Republic. Its construction started in 1357 under the auspices of King Charles IV.</string>
+    <string name="buda_info">Buda Castle is the historical castle and palace complex of the Hungarian kings in Budapest. The complex in the past was referred to as either the Royal Palace or the Royal Castle.</string>
+</resources>
